@@ -1,3 +1,5 @@
+# @Author : Roger Ramos (yihsic@gmail.com)
+
 class Actividad:
     """
     Estructura con atributos controlados para representar una Actividad.

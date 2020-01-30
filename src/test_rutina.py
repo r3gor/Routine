@@ -1,3 +1,5 @@
+# @Author : Roger Ramos (yihsic@gmail.com)
+
 import unittest
 
 from src.actividad import Actividad

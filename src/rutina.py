@@ -1,3 +1,5 @@
+# @Author : Roger Ramos (yihsic@gmail.com)
+
 from src.actividad import Actividad
 from src.pomodoro import Pomodoro
 
