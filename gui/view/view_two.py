@@ -1,5 +1,3 @@
-# @Author : Roger Ramos (yihsic@gmail.com)
-
 import sys
 
 from PyQt5.QtGui import QIcon
@@ -12,6 +10,9 @@ from PyQt5.QtWidgets import QLineEdit
 from PyQt5.QtWidgets import QMessageBox
 from PyQt5.QtWidgets import QPushButton
 from PyQt5.QtWidgets import QVBoxLayout
+
+__author__ = "Roger Ramos"
+__email__ = "yihsic@gmail.com"
 
 
 class PageTwo(QDialog):

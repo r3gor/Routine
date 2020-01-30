@@ -1,7 +1,8 @@
-# @Author : Roger Ramos (yihsic@gmail.com)
-
 from src.actividad import Actividad
 from src.rutina import Rutina
+
+__author__ = "Roger Ramos"
+__email__ = "yihsic@gmail.com"
 
 
 def main():

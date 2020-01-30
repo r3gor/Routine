@@ -1,4 +1,6 @@
-# @Author : Roger Ramos (yihsic@gmail.com)
+__author__ = "Roger Ramos"
+__email__ = "yihsic@gmail.com"
+
 
 class Actividad:
     """
@@ -9,7 +11,7 @@ class Actividad:
         los 50 primeros.
 
         Dificultad (dif) no debe ser menor que 0, Urgencia (urg) y Volumen (vol)
-        no deben ser menor que 1, caso contrario se lanzará un TypeException
+        no deben ser menor que 1, caso contrario se lanzará un ValueError
 
     Args:
         nom (str): Nombre de la actividad.

@@ -1,8 +1,9 @@
-# @Author : Roger Ramos (yihsic@gmail.com)
-
 import unittest
 
 from src.actividad import Actividad
+
+__author__ = "Roger Ramos"
+__email__ = "yihsic@gmail.com"
 
 
 class TestActividad(unittest.TestCase):

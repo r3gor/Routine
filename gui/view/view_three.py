@@ -12,8 +12,8 @@ from PyQt5.QtWidgets import QGroupBox
 from PyQt5.QtWidgets import QLabel
 from PyQt5.QtWidgets import QVBoxLayout
 
-from src.actividad import Actividad  # for test
-from src.pomodoro import Pomodoro  # for test
+__author__ = "Roger Ramos"
+__email__ = "yihsic@gmail.com"
 
 
 class PageThree(QDialog):
@@ -67,6 +67,9 @@ class PageThree(QDialog):
 
 if __name__ == '__main__':
     # TEST PAGE_THREE
+    from src.actividad import Actividad
+    from src.pomodoro import Pomodoro
+
     App = QApplication(sys.argv)
     page = PageThree([Pomodoro(Actividad("aritmetiCa", 3, 3, 4)), Pomodoro(Actividad("fiSiCa", 3, 3, 4))],
                      obj="AumEntaR inGresos")

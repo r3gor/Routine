@@ -1,6 +1,7 @@
-# @Author : Roger Ramos (yihsic@gmail.com)
-
 from src.actividad import Actividad
+
+__author__ = "Roger Ramos"
+__email__ = "yihsic@gmail.com"
 
 
 class Pomodoro:

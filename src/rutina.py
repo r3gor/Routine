@@ -1,7 +1,8 @@
-# @Author : Roger Ramos (yihsic@gmail.com)
-
 from src.actividad import Actividad
 from src.pomodoro import Pomodoro
+
+__author__ = "Roger Ramos"
+__email__ = "yihsic@gmail.com"
 
 
 def n_poms_aprox(n_horas):
@@ -23,7 +24,7 @@ def minu_tot_poms(n_poms: int) -> int:
 def n_poms_aprox_mejorado(n_horas: int) -> int:
     """
     Calcula la cantidad de pomodoros cuyo tiempo total de
-    duracion es la mas aproximada a el tiempo especificado.
+    duración es la mas aproximada a el tiempo especificado.
 
     :param n_horas: Cantidad de horas
     :return: Cantidad de pomodoros
@@ -38,10 +39,10 @@ def n_poms_aprox_mejorado(n_horas: int) -> int:
 
 def gen_poms(cant_poms: int, list_act: list) -> list:
     """
-    Retorna lista con los pomodoros necesarios para cada materia y en el orden que se deben realizar.
+    Retorna lista de objetos Pomodoro necesarios para cada actividad y en el orden que se deben realizar.
 
-    Ordena las actividades segun prioridad para el orden (peso orden: urgencia / dificultad),
-    la materia con mayor peso orden seran los primeros pomodoros de la lista, por lo tanto, los
+    Ordena las actividades según prioridad para el orden (peso orden: urgencia / dificultad),
+    la materia con mayor peso orden serán los primeros pomodoros de la lista, por lo tanto, los
     pomodoros que se deben realizar primero.
 
     Calcula el número de pomodoros para cada actividad segun su prioridad para la cantidad de

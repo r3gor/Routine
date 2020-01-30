@@ -1,5 +1,3 @@
-# @Author : Roger Ramos (yihsic@gmail.com)
-
 import unittest
 
 from src.actividad import Actividad
@@ -7,6 +5,9 @@ from src.pomodoro import Pomodoro
 from src.rutina import gen_poms
 from src.rutina import minu_tot_poms
 from src.rutina import n_poms_aprox_mejorado
+
+__author__ = "Roger Ramos"
+__email__ = "yihsic@gmail.com"
 
 
 class TestRutina(unittest.TestCase):
