@@ -4,7 +4,7 @@ from src.actividad import Actividad
 from src.pomodoro import Pomodoro
 from src.rutina import gen_poms
 from src.rutina import minu_tot_poms
-from src.rutina import n_poms_aprox_mejorado
+from src.rutina import n_poms
 
 __author__ = "Roger Ramos"
 __email__ = "yihsic@gmail.com"
@@ -13,14 +13,14 @@ __email__ = "yihsic@gmail.com"
 class TestRutina(unittest.TestCase):
 
     def test_n_poms_aprox_mejorado(self):
-        self.assertEqual(n_poms_aprox_mejorado(1), 2)
-        self.assertEqual(n_poms_aprox_mejorado(2), 4)
-        self.assertEqual(n_poms_aprox_mejorado(3), 6)
-        self.assertEqual(n_poms_aprox_mejorado(4), 7)
-        self.assertEqual(n_poms_aprox_mejorado(5), 9)
-        self.assertEqual(n_poms_aprox_mejorado(6), 11)
-        self.assertEqual(n_poms_aprox_mejorado(7), 13)
-        self.assertEqual(n_poms_aprox_mejorado(8), 15)
+        self.assertEqual(n_poms(1), 2)
+        self.assertEqual(n_poms(2), 4)
+        self.assertEqual(n_poms(3), 6)
+        self.assertEqual(n_poms(4), 7)
+        self.assertEqual(n_poms(5), 9)
+        self.assertEqual(n_poms(6), 11)
+        self.assertEqual(n_poms(7), 13)
+        self.assertEqual(n_poms(8), 15)
 
     def test_minu_tot_poms(self):
         self.assertEqual(minu_tot_poms(1), 30)

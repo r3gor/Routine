@@ -5,11 +5,6 @@ __author__ = "Roger Ramos"
 __email__ = "yihsic@gmail.com"
 
 
-def n_poms_aprox(n_horas):
-    n_minu = n_horas * 60
-    return round(4 * n_minu / 130)
-
-
 def minu_tot_poms(n_poms: int) -> int:
     """
     Calcula la cantidad de minutos totales para
@@ -21,16 +16,16 @@ def minu_tot_poms(n_poms: int) -> int:
     return int(30 * n_poms + (n_poms - n_poms % 4) * 10 / 4)
 
 
-def n_poms_aprox_mejorado(n_horas: int) -> int:
+def n_poms(n_horas: int) -> int:
     """
     Calcula la cantidad de pomodoros cuyo tiempo total de
     duración es la mas aproximada a el tiempo especificado.
 
     :param n_horas: Cantidad de horas
-    :return: Cantidad de pomodoros
+    :return: Cantidad (int) de pomodoros
     """
     n_minu = n_horas * 60
-    aprox = n_poms_aprox(n_horas)
+    aprox = round(4 * n_horas * 60 / 130)
     for i in [-1, +1]:
         if abs(n_minu - minu_tot_poms(aprox)) > abs(n_minu - minu_tot_poms(aprox + i)):
             aprox = aprox + i
@@ -79,5 +74,5 @@ class Rutina:
         self.obj = obj
         self.hor_durac = hor_durac
         self.list_act = list_act
-        self.cant_poms = n_poms_aprox_mejorado(self.hor_durac)
+        self.cant_poms = n_poms(self.hor_durac)
         self.list_poms = gen_poms(self.cant_poms, self.list_act)

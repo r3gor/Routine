@@ -1,5 +1,3 @@
-# @Author : Roger Ramos (yihsic@gmail.com)
-
 import sys
 
 from PyQt5.QtWidgets import QApplication
@@ -9,6 +7,9 @@ from gui.model.model import Model
 from gui.view.view_one import PageOne
 from gui.view.view_three import PageThree
 from gui.view.view_two import PageTwo
+
+__author__ = "Roger Ramos"
+__email__ = "yihsic@gmail.com"
 
 
 def main():
