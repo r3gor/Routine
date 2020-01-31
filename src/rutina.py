@@ -51,19 +51,19 @@ def gen_poms(cant_poms: int, list_act: list) -> list:
     :return: lista de objetos de clase Pomodoro creados
     """
     list_poms = list()
-    ult_act_agreg_peso_ord = 1000
+    peso_ord_de_ult_act_agreg = 1000
     for i in range(len(list_act)):
         sum_peso_poms, act_may_peso_ord = 0, Actividad("act_may_peso_ord", 1, 0, 1)
         for j in list_act:
-            sum_peso_poms += j.dif * j.vol
-            may_peso_ord = act_may_peso_ord.urg / act_may_peso_ord.dif
-            act_peso_ord = j.urg / j.dif
-            if may_peso_ord <= act_peso_ord < ult_act_agreg_peso_ord:
+            sum_peso_poms += j.peso_poms
+            may_peso_ord = act_may_peso_ord.peso_ord
+            act_peso_ord = j.peso_ord
+            if may_peso_ord <= act_peso_ord < peso_ord_de_ult_act_agreg:
                 act_may_peso_ord = j
-        cant_poms_act = round(act_may_peso_ord.vol * act_may_peso_ord.dif * cant_poms / sum_peso_poms)
+        cant_poms_act = round(act_may_peso_ord.peso_poms * cant_poms / sum_peso_poms)
         for k in range(cant_poms_act):
             list_poms.append(Pomodoro(act_may_peso_ord))
-        ult_act_agreg_peso_ord = act_may_peso_ord.urg / act_may_peso_ord.dif
+        peso_ord_de_ult_act_agreg = act_may_peso_ord.peso_ord
     return list_poms
 
 
